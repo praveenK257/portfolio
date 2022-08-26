@@ -1,0 +1,20 @@
+{
+  "name": "praveen-kumar.dev",
+  "version": "1.0.0",
+  "description": "My Portfolio",
+  "main": "index.js",
+  "scripts": {
+    "start": "",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/praveenK257/portfolio.git"
+  },
+  "author": "Praveen Kumar A (@praveenK257)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/praveenK257/portfolio/issues"
+  },
+  "homepage": "https://github.com/praveenK257/portfolio#readme"
+}

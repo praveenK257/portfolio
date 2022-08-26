@@ -1,0 +1,168 @@
+:root{
+    --base-background: #21212b;
+    --component-background: #2c2c37;
+    --base-text-color: #8c8c8e;
+    --nav-items: white;
+}
+
+body{
+    font-family: 'Roboto';
+    height: 100%;
+    color: var(--base-font);
+    background-color: var(--base-background);
+    overflow: hidden;
+}
+
+.parentContainer{
+    height: 98vh;
+    display: flex;
+    flex-direction: row;
+    padding: auto;
+    justify-content: space-evenly;
+}
+
+.profile{
+    background-color: var(--component-background);
+    min-width: 275px;
+    box-shadow: 0 1px 4px 0 rgb(15 15 20 / 10%);
+    position: relative;
+    z-index: 1;
+}
+
+.profileWrapper{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 10px;
+    color: white;
+}
+
+.profile-top{
+    position: relative;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.profile-dp{
+
+}
+
+.profile-dp img{
+    height: 100px;
+    border: 1px solid red;
+    border-radius: 50%;
+}
+
+.profile-name{
+    align-content: center;
+    color: white;
+}
+
+.profile-text {
+    align-content: center;
+}
+
+.profile-content{
+    overflow: auto;
+    height: 60vh;
+}
+
+.profile-content::-webkit-scrollbar {
+    width: 0;
+}
+
+.profile-bottom{
+    position: relative;
+    height: 30px;
+    background: red;
+    bottom: 50px;
+}
+
+.content{
+    background-color: var(--component-background);
+    width: 72vw;
+    box-shadow: 0 1px 4px 0 rgb(15 15 20 / 10%);
+    overflow: auto;
+    position: relative;
+    z-index: 1;
+    margin-left: 5px;
+}
+
+.nav-right{
+    background-color: var(--component-background);
+    width: 5vw;
+    box-shadow: 0 1px 4px 0 rgb(15 15 20 / 10%);
+    transition: width 1s ease;
+}
+
+.nav-right.expand {
+    height: 98vh;
+    width: 15vw;
+    position: relative;
+    z-index: 2;
+    right: 0;
+    transition: width 1s ease;
+}
+
+.navIcon{
+    height: 65px;
+    display: flex;
+    flex-direction: column-reverse;
+    border: 1px solid white;
+    background: var(--base-text-color);
+    cursor: pointer;
+}
+
+.navIcon svg {
+    height: 50px;
+    position: relative;
+    top: -6px;
+    transform: rotate(0deg);
+    transition: transform 1s ease;
+}
+
+.expand .navIcon svg {
+    transform: rotate(180deg);
+    transition: transform 1s ease;
+}
+
+.navItems{
+    padding: 10px;
+}
+
+nav ul li{
+    list-style: none;
+    margin: 50px 0;
+}
+
+a{
+    text-decoration: none;
+    color: var(--nav-items);
+}
+
+.navItems li span {
+    display: none;
+    position: relative;
+    left: 90px;
+    top: -27px;
+    visibility: hidden;
+}
+
+.expand #navBar > ul li span {
+    display: block !important;
+    visibility: visible;
+    transition: visibility 10s ease;
+}
+
+.navItems svg {
+    height: 30px;
+    position: relative;
+    left: 12px;
+}
+
