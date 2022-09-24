@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+:root{
+    --bg: #1a2b34;
+    --bg-body: #060606f0;
+    --primary-color-light: #c4e1f2;
+    --primary-color: #4eadee;
+    --black-variant: #15172b;
+    --light-violet: #2f366e;
+    --primary-color2: #4e7bac;
+    --dark-violet: #242757;
+    --pale-red: #ab5362;
+    --brown: #6a4b42;
+    --mineral-green: #3f5554;
+
+    --container-width: 75%;
+    --container-width-tablet: 86%;
+    --container-width-mobile: 90%;
+
+    --common-transition: all 400ms ease;
+}
+
+body{
+    background: var(--bg-body);
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    outline: none;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+.container{
+    width: var(--container-width);
+    margin: 0 auto;
+    display: none;
+}
+
+h1, h2, h3, h4, h5{
+    font-weight: 500;
+}
+
+h1{
+    font-size: 2.5rem;
+}
+
+section{
+    margin-top: 8.5rem;
+}
+
+section > h2, section > h5{
+    text-align: center;
+    color: var(--primary-color-light);
+}
+
+section > h2{
+    color: var(--primary-color);
+    margin-bottom: 3rem;
+}
+
+.text-light{
+    color: var(--primary-color-light);
+}
+
+a{
+    color: var(--primary-color);
+    transition: var(--common-transition);
+}
+
+a:hover{
+    color: var(--primary-color-light);
+}
+
+.button{
+    width: max-content;
+    color: var(--primary-color);
+    display: inline-block;
+    padding: 0.75rem 1.2rem;
+    border-radius: .4rem;
+    cursor: pointer;
+    border: 1px solid var(--primary-color);
+    transition: var(--common-transition);
+}
+
+.button:hover{
+    background-color: white;
+    color: var(--bg-body);
+    border-color: transparent;
+}
+
+.button.primary{
+    background-color: var(--primary-color);
+    color: var(--bg-body);
+}
+
+img{
+    display: block;
+    width: 100%;
+    object-fit: cover;
+}
+
+svg{
+    height: 45px;
+    width: 40px;
+    fill: white;
+}
+
+@media screen and (max-width: 1024px){
+    .container{
+        width: var(--container-width-tablet);
+    }
+    .section{
+        margin-top: 6rem;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .container{
+        width: var(--container-width-mobile);
+    }
+    .section > h2{
+        margin-bottom: 2rem;
+    }
+}

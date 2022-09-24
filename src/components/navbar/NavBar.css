@@ -1,0 +1,109 @@
+.navWrapper {
+    background: rebeccapurple;
+    position: absolute;
+    height: 100vh;
+    top: 0;
+    width: 60px;
+    transition: var(--common-transition);
+}
+.navWrapper.expand {
+    width: 220px;
+    transition: var(--common-transition);
+}
+
+nav{
+    display: flex;
+    flex-direction: column;
+}
+
+.logoWrapper{
+    max-height: 20vh;
+    min-height: 20vh;
+}
+
+.logo{
+    display: flex;
+}
+.logo > img {
+    opacity: 0;
+    max-width: 40px;
+    margin: 15px -20px;
+    transition: var(--common-transition);
+}
+.logo > svg {
+    transform: scale(1.1);
+    cursor: pointer;
+    margin: 15px 10px;
+}
+
+.navWrapper.expand .logo > img {
+    opacity: 1;
+    margin: 15px 10px;
+    margin-right: 110px;
+    transition: var(--common-transition);
+}
+.navWrapper.expand .logo > svg > path{
+    d: path('M4 6h16v2H4zm4 5h12v2H8zm5 5h7v2h-7z');
+    transition: var(--common-transition);
+}
+
+.name {
+    margin: 10px 35px;
+}
+.name h3, .name h5{
+    opacity: 0;
+    margin-left: -200px;
+    transition: var(--common-transition);
+}
+.navWrapper.expand .name h3, .navWrapper.expand .name h5{
+    opacity: 1;
+    margin-bottom: -3px;
+    margin-left: 0px;
+    transition: var(--common-transition);
+}
+.navWrapper.expand .name h5{
+    margin: 6px 4px;
+    color: var(--primary-color-light);
+}
+
+.navItemsWrapper{
+    min-height: 80vh;
+    max-height: 80vh;
+}
+
+.navItems{
+    
+}
+ul.navItems{
+    list-style: none;
+}
+
+.navItem{
+
+}
+li.navItem{
+    height: 40px;
+    width: 40px;
+    margin: 50px 0 0 -30px;
+    transition: var(--common-transition);
+}
+li.navItem a{
+    text-decoration: none;
+}
+li.navItem a span {
+    position: relative;
+    top: -40px;
+    left: -30px;
+    opacity: 0;
+    transition: var(--common-transition);
+}
+
+.navWrapper.expand .navItemsWrapper .navItems li.navItem{
+    margin-left: -10px;
+    transition: var(--common-transition);
+}
+.navWrapper.expand .navItemsWrapper .navItems li.navItem a span{
+    opacity: 1;
+    left: 75px;
+    transition: var(--common-transition);
+}
