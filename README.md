@@ -1,3 +1,3 @@
 # Live at
 
-praveen-kumar.dev
+https://praveen-kumar.dev

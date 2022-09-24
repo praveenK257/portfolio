@@ -3,9 +3,16 @@
 :root{
     --bg: #1a2b34;
     --bg-body: #060606f0;
-    --primary-color-light: #c4e1f2;
+    /* --primary-color-light: #c4e1f2;
     --primary-color: #4eadee;
-    --black-variant: #15172b;
+    */
+    --nav-bg:  #33005b;
+    --rebecca: rebeccapurple;
+    --primary-color: rebeccapurple;
+    --primary-color-2: #7500D1;
+    --primary-color-medium: #A32EFF;
+    --primary-color-light: #CB8AFF;
+    --black-variant: #15172b; 
     --light-violet: #2f366e;
     --primary-color2: #4e7bac;
     --dark-violet: #242757;
@@ -43,7 +50,13 @@ html{
 .container{
     width: var(--container-width);
     margin: 0 auto;
-    display: none;
+    margin-left: 140px;
+    transition: var(--common-transition);
+}
+
+.container.expand {
+    margin-left: 275px;
+    transition: var(--common-transition);
 }
 
 h1, h2, h3, h4, h5{
@@ -73,7 +86,7 @@ section > h2{
 }
 
 a{
-    color: var(--primary-color);
+    color: white;
     transition: var(--common-transition);
 }
 
@@ -118,6 +131,10 @@ svg{
 @media screen and (max-width: 1024px){
     .container{
         width: var(--container-width-tablet);
+        margin-left: 85px;
+    }
+    .container.expand {
+        margin-left: 100px;
     }
     .section{
         margin-top: 6rem;
@@ -127,6 +144,7 @@ svg{
 @media screen and (max-width: 600px){
     .container{
         width: var(--container-width-mobile);
+        margin: auto;
     }
     .section > h2{
         margin-bottom: 2rem;

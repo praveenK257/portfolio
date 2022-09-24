@@ -1,9 +1,9 @@
 import React from 'react'
 import './Home.css'
 
-const Home = () => {
+const Home = (props) => {
   return (
-    <header className='container home'>
+    <header className='container home '>
       <section className='hello'>
         <h4>Hello. I'm</h4>
         <h1>Praveen Kumar</h1>
