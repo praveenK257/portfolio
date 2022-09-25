@@ -19,11 +19,11 @@ const App = () => {
 
   useLayoutEffect(() => {
     let pathname = location.pathname.substring(1)
-    if(pathname !== currRoute){
+    if(pathname !== currRoute || pathname==''){
       // setting selected state in navbar
       setCurrRoute(pathname)
       document.querySelectorAll('.navItem').forEach((item)=>{
-        if(item.getAttribute('data-id') === pathname){
+        if(item.getAttribute('data-id') === pathname || (pathname=='' && item.getAttribute('data-id')==='home')){
           item.classList.add('selected')
         }
         else{
@@ -51,6 +51,7 @@ const App = () => {
         <Route path='/portfolio' element={<Portfolio />}/>
         <Route path='/contact' element={<Contact />}/>
       </Routes>
+      <Footer />
     </>
   )
 }

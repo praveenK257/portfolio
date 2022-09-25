@@ -22,7 +22,7 @@ const NavBar = ({currRoute}) => {
   }
 
   return (
-    <div className='navWrapper expand'>
+    <div className='navWrapper'>
       <nav> 
         <div className='logoWrapper'>
           <div className='logo'>
