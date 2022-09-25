@@ -1,9 +1,22 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 import './Portfolio.css'
 
 const Portfolio = () => {
   return (
-    <div className='container portfolio'>Portfolio</div>
+    <>
+      <main className='container portfolio '>
+        <section>
+          
+        </section>
+        <div className='prev-route'>
+          <Link to={`/experience`}>Work Experience</Link>
+        </div>
+        <div className='next-route'>
+          <Link to={`/contact`}>Contact me</Link>
+        </div>
+      </main>
+    </>
   )
 }
 

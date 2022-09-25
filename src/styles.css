@@ -37,6 +37,7 @@ body{
     text-decoration: none;
     outline: none;
     box-sizing: border-box;
+    overflow-x: hidden;
 }
 
 html{
@@ -52,11 +53,13 @@ html{
     margin: 0 auto;
     margin-left: 140px;
     transition: var(--common-transition);
+    --webkit-transition: var(--common-transition);
 }
 
 .container.expand {
     margin-left: 275px;
     transition: var(--common-transition);
+    --webkit-transition: var(--common-transition);
 }
 
 h1, h2, h3, h4, h5{
@@ -89,6 +92,7 @@ a{
     color: white;
     text-decoration: none;
     transition: var(--common-transition);
+    --webkit-transition: var(--common-transition);
 }
 
 a:hover{
@@ -97,13 +101,14 @@ a:hover{
 
 .button{
     width: max-content;
-    color: var(--primary-color);
+    color: var(--primary-color-light);
     display: inline-block;
     padding: 0.75rem 1.2rem;
     border-radius: .4rem;
     cursor: pointer;
     border: 1px solid var(--primary-color);
     transition: var(--common-transition);
+    --webkit-transition: var(--common-transition);
 }
 
 .button:hover{
@@ -129,6 +134,28 @@ svg{
     fill: white;
 }
 
+.next-route {
+    position: relative;
+    right: calc(-100% + 50px);
+    bottom: -50px;
+}
+.next-route::before, .prev-route::after{
+    content: '>>';
+    margin: 0px 5px;
+    font-size: 15px;
+}
+.prev-route, .prev-route.contact {
+    position: relative;
+    left: 0;
+    bottom: -75px;
+}
+.prev-route::after{
+    content: '<<';
+}
+.prev-route.contact{
+    bottom: -50px;
+}
+
 @media screen and (max-width: 1024px){
     .container{
         width: var(--container-width-tablet);
@@ -140,6 +167,9 @@ svg{
     .section{
         margin-top: 6rem;
     }
+    .next-route, .prev-route{
+        display: none;    
+    }
 }
 
 @media screen and (max-width: 600px){
@@ -149,5 +179,8 @@ svg{
     }
     .section > h2{
         margin-bottom: 2rem;
+    }
+    .next-route, .prev-route{
+        display: none;    
     }
 }

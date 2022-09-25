@@ -6,14 +6,47 @@ header{
 
 }
 
-.hello{
 
+.home-item{
+    margin: 10px auto;
 }
 
-.home-actions{
-
+.home-item.dp{
+    width: 350px;
+}
+.home-item.dp img{
+    width: 100%;
+    margin: 0 auto;
+    border-radius: 50%;
+    outline: 1px solid var(--primary-color);
 }
 
-.home-socials{
-    
+.home-item.intro{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+.home-item.intro > h1{
+    margin: -10px;
+}
+
+.home-action{
+    display: flex;
+}
+
+.home-action .button{
+    margin: 0px 25px;
+}
+
+@media screen and (max-width: 1024px){
+    .home-item.dp{
+        width: 350px;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .home-item.dp{
+        width: 250px;
+    }
 }

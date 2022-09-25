@@ -10,6 +10,7 @@ import Portfolio from './components/portfolio/Portfolio'
 import Contact from './components/contact/Contact'
 import Skills from './components/skills/Skills'
 import Footer from './components/footer/Footer'
+import Animation from './components/animation/Animation';
 
 import './styles.css'
 
@@ -42,6 +43,7 @@ const App = () => {
   return (
     <>
       <NavBar currRoute={currRoute}/>
+      <Animation />
       <Routes>
         <Route path='/' element={<Home />}/>
         <Route path='/home' element={<Home />}/>

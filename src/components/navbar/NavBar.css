@@ -9,6 +9,7 @@
 .navWrapper.expand {
     width: 220px;
     transition: var(--common-transition);
+    --webkit-transition: var(--common-transition);
 }
 
 nav{
@@ -30,6 +31,7 @@ nav{
     margin: 15px -20px;
     object-fit: contain;
     transition: var(--common-transition);
+    --webkit-transition: var(--common-transition);
 }
 .logo > svg {
     transform: scale(1.1);
@@ -42,10 +44,12 @@ nav{
     margin: 15px 10px;
     margin-right: 110px;
     transition: var(--common-transition);
+    --webkit-transition: var(--common-transition);
 }
 .navWrapper.expand .logo > svg > path{
     d: path('M4 6h16v2H4zm4 5h12v2H8zm5 5h7v2h-7z');
     transition: var(--common-transition);
+    --webkit-transition: var(--common-transition);
 }
 
 .name {
@@ -55,12 +59,14 @@ nav{
     opacity: 0;
     margin-left: -200px;
     transition: var(--common-transition);
+    --webkit-transition: var(--common-transition);
 }
 .navWrapper.expand .name h3, .navWrapper.expand .name h5{
     opacity: 1;
     margin-bottom: -3px;
     margin-left: 0px;
     transition: var(--common-transition);
+    --webkit-transition: var(--common-transition);
 }
 .navWrapper.expand .name h5{
     margin: 6px 4px;
@@ -87,6 +93,7 @@ li.navItem{
     width: 40px;
     margin: 50px 0 0 -30px;
     transition: var(--common-transition);
+    --webkit-transition: var(--common-transition);
 }
 li.navItem a{
     text-decoration: none;
@@ -98,10 +105,12 @@ li.navItem a > span {
     left: -30px;
     opacity: 0;
     transition: var(--common-transition);
+    --webkit-transition: var(--common-transition);
 }
 li.navItem a:hover > svg{
     fill: var(--primary-color-light);
     transition: var(--common-transition);
+    --webkit-transition: var(--common-transition);
 }
 
 .navItem.selected{
@@ -123,11 +132,13 @@ li.navItem a:hover > svg{
 .navWrapper.expand .navItemsWrapper .navItems li.navItem{
     margin-left: -10px;
     transition: var(--common-transition);
+    --webkit-transition: var(--common-transition);
 }
 .navWrapper.expand .navItemsWrapper .navItems li.navItem a > span{
     opacity: 1;
     left: 75px;
     transition: var(--common-transition);
+    --webkit-transition: var(--common-transition);
 }
 
 @media screen and (max-width: 600px){

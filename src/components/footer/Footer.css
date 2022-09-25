@@ -42,4 +42,5 @@
 .footer-item a > svg:hover{
     fill: var(--primary-color-light);
     transition: var(--common-transition);
+    --webkit-transition: var(--common-transition);
 }

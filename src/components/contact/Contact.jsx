@@ -1,9 +1,19 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 import './Contact.css'
 
 const Contact = () => {
   return (
-    <div className='container contact'>Contact</div>
+    <>
+      <main className='container contact '>
+        <section>
+          
+        </section>
+        <div className='prev-route contact'>
+          <Link to={`/portfolio`}>Portfolio</Link>
+        </div>
+      </main>
+    </>
   )
 }
 

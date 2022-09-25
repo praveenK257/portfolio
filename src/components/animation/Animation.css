@@ -1,0 +1,44 @@
+.animation-wrapper{
+    position: fixed;
+    z-index: -1;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+.animation-bar{
+    height: 50px;
+    width: 30%;
+    outline: 1px solid var(--primary-color);
+    background-color: transparent;
+    position: absolute;
+    transform: rotate(45deg);
+}
+
+.animation-bar.top{
+    top: 5%;
+    right: 0;
+}
+.animation-bar.right{
+    top: 50%;
+    right: -160px;
+}
+.animation-bar.bottom{
+    top: 50%;
+    left: -160px;
+}
+.animation-bar.left{
+    left: -5%;
+}
+
+@keyframes rotate {
+    100%{
+        transform: rotate(145deg);
+    }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .animation-bar.rotate {
+      animation: rotate .2s forwards; 
+    }
+}
