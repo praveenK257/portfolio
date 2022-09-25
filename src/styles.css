@@ -12,6 +12,7 @@
     --primary-color-2: #7500D1;
     --primary-color-medium: #A32EFF;
     --primary-color-light: #CB8AFF;
+    --white-variant: #ede9f1;
     --black-variant: #15172b; 
     --light-violet: #2f366e;
     --primary-color2: #4e7bac;
@@ -62,16 +63,29 @@ html{
     --webkit-transition: var(--common-transition);
 }
 
+.container.home, .container.about, .container.portfolio, .container.skills, .container.experience{
+    height: 100vh;
+}
+
 h1, h2, h3, h4, h5{
     font-weight: 500;
+    text-align: center;
 }
 
 h1{
     font-size: 2.5rem;
 }
 
+h2 {
+    font-size: 1.7rem;
+}
+
+h5 {
+    font-size: .75em;
+}
+
 section{
-    margin-top: 8.5rem;
+    margin-top: 3.5rem;
 }
 
 section > h2, section > h5{
@@ -86,6 +100,25 @@ section > h2{
 
 .text-light{
     color: var(--primary-color-light);
+}
+
+p{
+    font-size: 0.9rem;
+    text-align: justify;
+}
+
+span.highlight{
+    color: var(--primary-color-light);
+}
+
+.tag{
+    border: 1px solid var(--primary-color);
+    padding: 0.3rem 0.8rem;
+    border-radius: 30px;
+    font-size: .7rem;
+    background: var(--white-variant);
+    color: var(--primary-color-light);
+    user-select: none;
 }
 
 a{
@@ -103,7 +136,7 @@ a:hover{
     width: max-content;
     color: var(--primary-color-light);
     display: inline-block;
-    padding: 0.75rem 1.2rem;
+    padding: 0.5rem 1rem;
     border-radius: .4rem;
     cursor: pointer;
     border: 1px solid var(--primary-color);
@@ -129,8 +162,8 @@ img{
 }
 
 svg{
-    height: 45px;
-    width: 40px;
+    height: 30px;
+    width: 30px;
     fill: white;
 }
 
@@ -138,22 +171,41 @@ svg{
     position: relative;
     right: calc(-100% + 50px);
     bottom: -50px;
+    font-size: .7rem;
 }
+
+div#root {
+    overflow-x: hidden;
+}
+
 .next-route::before, .prev-route::after{
     content: '>>';
     margin: 0px 5px;
-    font-size: 15px;
 }
 .prev-route, .prev-route.contact {
     position: relative;
     left: 0;
     bottom: -75px;
+    font-size: .7rem;
 }
 .prev-route::after{
     content: '<<';
 }
 .prev-route.contact{
     bottom: -50px;
+}
+
+hr{
+    width: 100%;
+    margin: 25px 0;
+    height: 0.1px;
+    border-width: 0;
+    background: white;
+    opacity: .1;
+}
+
+section h1 span:last-child{
+    color: var(--primary-color);
 }
 
 @media screen and (max-width: 1024px){

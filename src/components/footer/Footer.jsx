@@ -4,6 +4,8 @@ import './Footer.css'
 
 const Footer = (props) => {
   return (
+    <>
+    <hr className='footer-hr'/>
     <footer className='container footer'>
       <div className='footer-items'>
         <a href='#resume'>Download CV</a>
@@ -42,6 +44,7 @@ const Footer = (props) => {
         <span>2022 Praveen Kumar A</span>
       </div>
     </footer>
+    </>
   )
 }
 

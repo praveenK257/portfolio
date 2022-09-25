@@ -3,7 +3,8 @@
     position: fixed;
     height: 100vh;
     bottom: 0;
-    width: 60px;
+    width: 50px;
+    z-index: 1000;
     transition: all .5s ease;
 }
 .navWrapper.expand {
@@ -69,7 +70,7 @@ nav{
     --webkit-transition: var(--common-transition);
 }
 .navWrapper.expand .name h5{
-    margin: 6px 4px;
+    margin: 6px 10px;
     color: var(--primary-color-light);
 }
 
@@ -100,8 +101,9 @@ li.navItem a{
     transition: none;
 }
 li.navItem a > span {
+    font-size: 14px;
     position: relative;
-    top: -40px;
+    top: -33px;
     left: -30px;
     opacity: 0;
     transition: var(--common-transition);
@@ -144,6 +146,7 @@ li.navItem a:hover > svg{
 @media screen and (max-width: 600px){
     .navWrapper{
         height: 100vw;
+        bottom: -1px;
     }
 }
 
@@ -151,6 +154,7 @@ li.navItem a:hover > svg{
     .navWrapper, .navWrapper.expand{
         height: 60px;
         width: 100vw;
+        bottom: -1px;
     }
     nav{
         flex-direction: row;
@@ -159,8 +163,10 @@ li.navItem a:hover > svg{
         display: none;
     }
     .navItemsWrapper {
-        height: 100%;
-        width: 100%;
+        min-height: 60px;
+        max-height: 60px;
+        max-width: 100%;
+        min-width: 100%;
     }
     ul.navItems {
         display: flex;

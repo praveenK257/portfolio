@@ -19,6 +19,7 @@ const App = () => {
   const [currRoute, setCurrRoute] = useState('')
 
   useLayoutEffect(() => {
+    window.scrollTo(0,0)
     let pathname = location.pathname.substring(1)
     if(pathname !== currRoute || pathname==''){
       // setting selected state in navbar

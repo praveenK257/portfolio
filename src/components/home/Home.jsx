@@ -13,9 +13,11 @@ const Home = (props) => {
             <img src={PraveenDP}></img>
           </div>
           <div className='home-item intro'>
-            <h4>Hello. I'm</h4>
-            <h1>Praveen Kumar</h1>
-            <h4 className='text-light'>Software Developer</h4>
+            <h4>Hi there . I'm</h4>
+            <h2>Praveen Kumar</h2>
+            <h4 className='tag'>Software Developer</h4>
+            <p>I'm interested in interested in Fullstack Web development & Artificial Intelligence</p>
+            {/* <hr/> */}
             <div className='home-action'>
               <a className='button' href=''>Download CV</a>
               <Link className='button' to={`/contact`}>Say hi</Link>

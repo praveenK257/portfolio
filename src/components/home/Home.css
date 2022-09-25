@@ -12,7 +12,7 @@ header{
 }
 
 .home-item.dp{
-    width: 350px;
+    width: 300px;
 }
 .home-item.dp img{
     width: 100%;
@@ -27,12 +27,16 @@ header{
     flex-direction: column;
     margin: 10px;
 }
-.home-item.intro > h1{
-    margin: -10px;
+.home-item.intro > h2{
+    margin-top: -15px;
+    margin-bottom: -2px;
+    color: var(--primary-color-light);
 }
 
 .home-action{
     display: flex;
+    /* padding: 15px 10px 0px 10px; */
+    margin: 10px auto;
 }
 
 .home-action .button{
@@ -41,7 +45,7 @@ header{
 
 @media screen and (max-width: 1024px){
     .home-item.dp{
-        width: 350px;
+        width: 300px;
     }
 }
 

@@ -7,7 +7,7 @@ const Skills = () => {
     <>
       <main className='container skills '>
         <section>
-          
+          <h1><span>MY</span> <span>SKILLS</span></h1>
         </section>
         <div className='prev-route'>
           <Link to={`/about`}>About me</Link>
