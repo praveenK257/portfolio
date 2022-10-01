@@ -1,0 +1,5 @@
+.wrapper.portfolio h4 {
+    font-size: 25px;
+    margin: 200px auto;
+    animation: color-train 2s infinite;
+}

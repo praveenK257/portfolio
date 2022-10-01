@@ -16,7 +16,7 @@ const Home = (props) => {
             <h4>Hi there . I'm</h4>
             <h2>Praveen Kumar</h2>
             <h4 className='tag'>Software Developer</h4>
-            <p>I'm interested in interested in Fullstack Web development & Artificial Intelligence</p>
+            <p>I'm interested in Fullstack Web development & Artificial Intelligence</p>
             {/* <hr/> */}
             <div className='home-action'>
               <a className='button' href=''>Download CV</a>

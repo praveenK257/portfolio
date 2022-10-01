@@ -12,6 +12,8 @@
     --primary-color-2: #7500D1;
     --primary-color-medium: #A32EFF;
     --primary-color-light: #CB8AFF;
+    --card-bg: #3d3d3d52;
+
     --white-variant: #ede9f1;
     --black-variant: #15172b; 
     --light-violet: #2f366e;
@@ -26,6 +28,7 @@
     --container-width-mobile: 90%;
 
     --common-transition: all 400ms ease;
+    --border-radius: 15px;
 }
 
 body{
@@ -64,7 +67,11 @@ html{
 }
 
 .container.home, .container.about, .container.portfolio, .container.skills, .container.experience{
-    height: 100vh;
+    height: fit-content;
+}
+
+.wrapper, .wrapper > div{
+    margin: 50px 0;
 }
 
 h1, h2, h3, h4, h5{
@@ -107,8 +114,20 @@ p{
     text-align: justify;
 }
 
-span.highlight{
+.highlight{
     color: var(--primary-color-light);
+}
+
+.text-container{
+    text-align: center;
+    padding: 25px;
+    background: var(--card-bg);
+    border-radius: var(--border-radius);
+}
+
+.tag-container{
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .tag{
@@ -117,7 +136,7 @@ span.highlight{
     border-radius: 30px;
     font-size: .7rem;
     background: var(--white-variant);
-    color: var(--primary-color-light);
+    color: var(--black-variant);
     user-select: none;
 }
 
@@ -207,6 +226,32 @@ hr{
 section h1 span:last-child{
     color: var(--primary-color);
 }
+
+h4.sub-title{
+    text-align: left;
+    text-decoration: underline;
+    text-decoration-color: var(--primary-color-2);
+    text-decoration-thickness: 3px;
+}
+
+.timeline {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Animations */
+@keyframes color-train {
+    0%{
+        color: var(--white-variant);
+    }
+    50%{
+        color: var(--primary-color-2);
+    }
+    100%{
+        color: var(--primary-color2);
+    }
+}
+
 
 @media screen and (max-width: 1024px){
     .container{

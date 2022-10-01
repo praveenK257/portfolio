@@ -19,6 +19,7 @@ header{
     margin: 0 auto;
     border-radius: 50%;
     outline: 1px solid var(--primary-color);
+    filter: hue-rotate(-7deg) contrast(.85) brightness(0.9);
 }
 
 .home-item.intro{

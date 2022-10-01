@@ -1,0 +1,77 @@
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+input, textarea{
+    width: 75%;
+    height: 35px;
+    border-radius: 10px;
+    border: none;
+    transition: var(--common-transition);
+    -webkit-transition: var(--common-transition);
+    background-color: var(--card-bg) !important;
+    color: var(--primary-color-light) !important;
+    background-size: 20px !important;
+}
+
+input[type="text" i],input[type="email" i] {
+    padding:6px 10px 6px 50px;
+}
+
+input[type="submit" i] {
+    background: transparent;
+}
+
+textarea{
+    height: 100px;
+    padding: 20px 10px 20px 50px;
+}
+
+:focus-visible {
+    outline: 0.5px solid var(--primary-color-light);
+}
+
+input#contactname {
+    background: url(/src/assets/user.png) no-repeat scroll 10px 15px;
+}
+input#contactname:focus-visible {
+    background: url(/src/assets/user-h.png) no-repeat scroll 10px 15px;
+}
+
+input#contactemail {
+    background: url(/src/assets/contact.png) no-repeat scroll 10px 15px;
+}
+input#contactemail:focus-visible {
+    background: url(/src/assets/contact-h.png) no-repeat scroll 10px 15px;
+}
+
+textarea#contactsubject {
+    background: url(/src/assets/message.png) no-repeat scroll 10px 15px;
+}
+textarea#contactsubject:focus-visible {
+    background: url(/src/assets/message-h.png) no-repeat scroll 10px 15px;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active{
+    -webkit-box-shadow: 0 0 0 30px var(--card-bg) inset !important;
+}
+
+input:-webkit-autofill{
+    -webkit-text-fill-color: var(--primary-color-light) !important;
+}
+
+@media screen and (max-width: 600px){
+    input[type="text" i], input[type="email" i],  textarea {
+        width: 75%;
+        margin: 0 0 0 15px;
+        padding: 6px 10px 6px 50px;
+    }
+    input[type="submit" i]{
+        margin-left: 20px;
+    }
+}

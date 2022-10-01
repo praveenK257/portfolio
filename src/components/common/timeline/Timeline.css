@@ -1,0 +1,39 @@
+.timeline-item {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    min-width: 400px;
+    margin: 0 auto;
+}
+
+.timeline-item p{
+    font-size: .8rem;
+    text-align: center;
+}
+
+.tag.timeline {
+    width: fit-content;
+    margin: 0 auto;
+    padding: 0.1rem 0.5rem;
+}
+
+.timeline-item-style{
+    display: block;
+    height: 30px;
+    width: 1.5px;
+    margin: 0 auto;
+    background-color: var(--white-variant);
+    opacity: .75;
+    font-size: .65rem;
+}
+
+@media screen and (max-width: 1024px){
+      
+}
+
+@media screen and (max-width: 600px){
+    .timeline-item {
+        max-width: 300px;
+        min-width: 300px;
+    } 
+}

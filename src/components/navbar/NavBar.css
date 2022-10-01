@@ -103,7 +103,7 @@ li.navItem a{
 li.navItem a > span {
     font-size: 14px;
     position: relative;
-    top: -33px;
+    top: -28px;
     left: -30px;
     opacity: 0;
     transition: var(--common-transition);

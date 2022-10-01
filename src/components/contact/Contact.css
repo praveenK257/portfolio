@@ -1,0 +1,22 @@
+.contact-form {
+    margin-left: 100px !important;
+}
+
+.email {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.email svg{
+    fill: var(--primary-color-light);
+    position: relative;
+    top: 17px;
+    margin: 0 10px;
+}
+
+@media screen and (max-width: 600px){
+    .contact-form {
+        margin-left: 0 !important;
+    }
+}

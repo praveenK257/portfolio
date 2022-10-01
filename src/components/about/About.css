@@ -2,14 +2,7 @@
 
 }
 
-.aboutme-wrapper{
-    margin: 50px 0;
+.tag.interest {
+    width: fit-content;
+    margin: 10px;
 }
-
-.aboutme{
-    text-align: center;
-}
-
-/* section.about h1 span:last-child{
-    color: var(--primary-color);
-} */
