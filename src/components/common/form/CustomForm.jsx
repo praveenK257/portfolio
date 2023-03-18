@@ -1,7 +1,7 @@
+import axios from 'axios';
 import React, { useState } from 'react'
 
 import './CustomForm.css'
-import $ from 'jquery'
 
 export default function CustomForm({type}) {
   
@@ -10,6 +10,16 @@ export default function CustomForm({type}) {
 
   const url = 'https://script.google.com/macros/s/AKfycbyQRA75V-_rqsSAJRes6yMh5sSa9iQ--_8HdnbV0MovT2CxwQs-Y35UumKmVkKc3TpalQ/exec'
   const method = 'POST'
+
+  const sendReqToGoogleSheets = ( event )=>{
+    event.preventDefault()
+    if(message.length == 0 || Object.keys(inputs).length < 2 ){
+      alert('Please enter valid data in all fields')
+    }
+    else{
+      document.getElementById('contactForm').submit()
+    }
+  }
 
   const handleChange = (event)=>{
     event.preventDefault();
@@ -25,7 +35,7 @@ export default function CustomForm({type}) {
   }
 
   return (
-    <form method={method} action={url}>
+    <form method={method} action={url} target="_blank" id="contactForm">
       <label>
         
         <input type="text" id={type+"name"} name={type+"name"} placeholder="Your name..." value={inputs[type+"name"] || ""} onChange={handleChange}/>
@@ -37,7 +47,7 @@ export default function CustomForm({type}) {
         <textarea type="text" id={type+"subject"} name={type+"subject"} placeholder="Your message..." value={message} onChange={handleChange}/>
       </label><br/>
 
-      <input type="submit" id={type+"submit"} className='button'value="SEND MESSAGE"/>
+      <input type="button" id={type+"submit"} className='button' value="SEND MESSAGE" onClick={sendReqToGoogleSheets}/>
     </form>
     
   )
