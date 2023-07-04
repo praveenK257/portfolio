@@ -18,11 +18,11 @@ const Experience = () => {
         <section>
           <h1><span>WORK</span> <span>EXPERIENCE</span></h1>
           <div className="wrapper experience">
+            <div className="card">
+              <p>I'm currently working as a Full Stack Developer mainly based out on Javascript, Scala and Spring Framework.</p>
+            </div>
             <div className="work-timeline">
-              <h4 className='sub-title'>CURRENT WORK</h4>
-              <div>
-                <p>I'm currently working as a Web Application Developer mainly based out on Javascript, Scala and Spring Framework.</p>
-              </div>
+              <h3 className='sub-title'>WORK HISTORY</h3>
               <div className="timeline">
                 <Timeline data={work} type="work-experience"/>
               </div>

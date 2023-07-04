@@ -1,5 +1,15 @@
+.wrapper.portfolio{
+    margin: 100px 0;
+}
+
 .wrapper.portfolio h4 {
     font-size: 25px;
     margin: 200px auto;
     animation: color-train 2s infinite;
+}
+
+.projects-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }

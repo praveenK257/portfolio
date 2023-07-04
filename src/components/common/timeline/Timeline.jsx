@@ -9,8 +9,8 @@ const Timeline = ({data, type}) => {
     <>
       {data.map((item, ind)=>(
         <div key={ind} className='timeline-item'> 
-          <div className="timeline-item-desc text-container ">
-            <span className='tag timeline'>{item.start} - {item.end}</span>
+          <div className="timeline-item-desc card ">
+            <span className='tag large timeline'>{item.start} - {item.end}</span>
             <p>{item[infokey]}</p>
             <p className='highlight'>{item.institute}</p>
           </div>

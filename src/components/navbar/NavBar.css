@@ -3,7 +3,7 @@
     position: fixed;
     height: 100vh;
     bottom: 0;
-    width: 50px;
+    width: 65px;
     z-index: 1000;
     transition: all .5s ease;
 }
@@ -37,7 +37,7 @@ nav{
 .logo > svg {
     transform: scale(1.1);
     cursor: pointer;
-    margin: 15px 10px;
+    margin: 15px;
 }
 
 .navWrapper.expand .logo > img {
@@ -90,9 +90,9 @@ ul.navItems{
 
 }
 li.navItem{
-    height: 40px;
-    width: 40px;
-    margin: 50px 0 0 -30px;
+    height: 45px;
+    width: 45px;
+    margin: 50px 0 0 -23px;
     transition: var(--common-transition);
     --webkit-transition: var(--common-transition);
 }
@@ -101,7 +101,7 @@ li.navItem a{
     transition: none;
 }
 li.navItem a > span {
-    font-size: 14px;
+    font-size: 15px;
     position: relative;
     top: -35px;
     left: -30px;
@@ -138,7 +138,7 @@ li.navItem a:hover > svg{
 }
 .navWrapper.expand .navItemsWrapper .navItems li.navItem a > span{
     opacity: 1;
-    left: 75px;
+    left: 70px;
     transition: var(--common-transition);
     --webkit-transition: var(--common-transition);
 }

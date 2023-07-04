@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
 import './Footer.css'
+import downloadResume from '../../utils/downloadResume';
 
 const Footer = (props) => {
   return (
@@ -8,7 +9,7 @@ const Footer = (props) => {
     <hr className='footer-hr'/>
     <footer className='container footer'>
       <div className='footer-items'>
-        <a href='#resume'>Download CV</a>
+        <a href='' onClick={downloadResume}>Download CV</a>
       </div>
       <div className='footer-items'>
         <ul>

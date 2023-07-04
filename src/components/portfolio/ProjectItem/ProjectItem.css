@@ -1,0 +1,50 @@
+.project-item {
+    height: 250px;
+    width: 300px;
+
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: space-between;
+    
+    font-size: 14px;
+}
+
+.project-header {
+    height: 50px;
+    font-size: 22px;
+    align-self: center;
+}
+
+.project-body {
+    height: 80px;
+    padding: 2px;
+    text-align: left;
+}
+
+.project-footer {
+    height: 120px;
+}
+
+.project-tech-stack {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.project-link{
+    float: right;
+    position: relative;
+    z-index: 1;
+    left: 50px;
+    bottom: 15px;
+}
+
+.project-link svg{
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+}
+.project-link svg:hover{
+    fill: var(--primary-color-light);
+}

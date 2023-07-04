@@ -1,5 +1,4 @@
-import React, { useEffect, useLayoutEffect, useState } from 'react';
-import ReactDOM from 'react-dom';
+import React, { useLayoutEffect, useState } from 'react';
 import { Route, Routes, useLocation } from 'react-router-dom';
 
 import NavBar from './components/navbar/NavBar'
@@ -21,7 +20,7 @@ const App = () => {
   useLayoutEffect(() => {
     window.scrollTo(0,0)
     let pathname = location.pathname.substring(1)
-    if(pathname !== currRoute || pathname==''){
+    if(pathname !== currRoute || pathname === ''){
       // setting selected state in navbar
       setCurrRoute(pathname)
       document.querySelectorAll('.navItem').forEach((item)=>{

@@ -1,5 +1,5 @@
 .contact-form {
-    margin-left: 100px !important;
+    /* margin-left: 300px !important; */
 }
 
 .email {
@@ -15,8 +15,39 @@
     margin: 0 10px;
 }
 
+
 @media screen and (max-width: 600px){
+    #contactsubmit{
+        position: relative;
+        left: 15px;
+    }
+}
+
+@media screen and (min-width: 600px){
     .contact-form {
         margin-left: 0 !important;
     }
+
+    #contactsubmit{
+        position: relative;
+        left: 15px;
+    }
+}
+
+@media screen and (min-width: 900px){
+    .contact-form {
+        margin-left: 90px !important;
+    }
+}
+
+@media screen and (min-width: 1200px){
+    .contact-form {
+        margin-left: 130px !important;
+    }    
+}
+
+@media screen and (min-width: 1250px){
+    .contact-form {
+        margin-left: 300px !important;
+    }    
 }

@@ -12,7 +12,7 @@ header{
 }
 
 .home-item.dp{
-    width: 300px;
+    width: 400px;
 }
 .home-item.dp img{
     width: 100%;
@@ -28,7 +28,7 @@ header{
     flex-direction: column;
     margin: 10px;
 }
-.home-item.intro > h2{
+.home-item.intro > h1{
     margin-top: -15px;
     margin-bottom: -2px;
     color: var(--primary-color-light);

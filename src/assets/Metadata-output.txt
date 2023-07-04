@@ -1,0 +1,29 @@
+InfoBegin
+InfoKey: Keywords
+InfoValue: DAFjXMmodVE,BAFjXGPlLwc
+InfoBegin
+InfoKey: Creator
+InfoValue: Canva
+InfoBegin
+InfoKey: ModDate
+InfoValue: D:20230519150938+00&apos;00&apos;
+InfoBegin
+InfoKey: CreationDate
+InfoValue: D:20230519150939+00&apos;00&apos;
+InfoBegin
+InfoKey: Producer
+InfoValue: Canva
+InfoBegin
+InfoKey: Author
+InfoValue: Praveen Kumar A
+InfoBegin
+InfoKey: Title
+InfoValue: Praveen Kumar - Resume, May19 2023
+PdfID0: 4bbbb531af7e93e1a008d346f2fb03d3
+PdfID1: 4bbbb531af7e93e1a008d346f2fb03d3
+NumberOfPages: 1
+PageMediaBegin
+PageMediaNumber: 1
+PageMediaRotation: 0
+PageMediaRect: 0 7.83 595.5 850.08
+PageMediaDimensions: 595.5 842.25

@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 
 import './Home.css'
 import PraveenDP from '../../assets/praveen.jpg'
+import downloadResume from '../../utils/downloadResume';
 
 const Home = (props) => {
   return (
@@ -10,16 +11,16 @@ const Home = (props) => {
       <main className='container home '>
         <section className='hello'>
           <div className='home-item dp'>
-            <img src={PraveenDP}></img>
+            <img src={PraveenDP} alt='Praveen Profile Picture'></img>
           </div>
           <div className='home-item intro'>
-            <h4>Hi there . I'm</h4>
-            <h2>Praveen Kumar</h2>
-            <h4 className='tag'>Software Developer</h4>
+            <h3>Hi there . I'm</h3>
+            <h1>Praveen Kumar</h1>
+            <h3 className='tag'>Software Developer</h3>
             <p>I'm interested in Fullstack Web development & Artificial Intelligence</p>
             {/* <hr/> */}
             <div className='home-action'>
-              <a className='button' href=''>Download CV</a>
+              <a className='button' onClick={downloadResume} href=''>Download CV</a>
               <Link className='button' to={`/contact`}>Say hi</Link>
             </div>
           </div>
