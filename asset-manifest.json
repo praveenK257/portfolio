@@ -1,14 +1,15 @@
 {
   "files": {
-    "main.css": "/static/css/main.6b2db493.css",
-    "main.js": "/static/js/main.ffad4ddc.js",
+    "main.css": "/static/css/main.cb1a3a97.css",
+    "main.js": "/static/js/main.0d5b10f3.js",
+    "static/media/Praveen-Resume-May19.pdf": "/static/media/Praveen-Resume-May19.255b5ad2cbcf9e219b0d.pdf",
     "static/media/praveen.jpg": "/static/media/praveen.87d9145cd0694e9f607c.jpg",
     "index.html": "/index.html",
-    "main.6b2db493.css.map": "/static/css/main.6b2db493.css.map",
-    "main.ffad4ddc.js.map": "/static/js/main.ffad4ddc.js.map"
+    "main.cb1a3a97.css.map": "/static/css/main.cb1a3a97.css.map",
+    "main.0d5b10f3.js.map": "/static/js/main.0d5b10f3.js.map"
   },
   "entrypoints": [
-    "static/css/main.6b2db493.css",
-    "static/js/main.ffad4ddc.js"
+    "static/css/main.cb1a3a97.css",
+    "static/js/main.0d5b10f3.js"
   ]
 }
