@@ -27,11 +27,6 @@
     .contact-form {
         margin-left: 0 !important;
     }
-
-    #contactsubmit{
-        position: relative;
-        left: 15px;
-    }
 }
 
 @media screen and (min-width: 900px){
